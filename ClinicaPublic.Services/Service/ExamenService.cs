@@ -18,7 +18,7 @@ namespace ClinicaPublic.Services.Service
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            return _repositoryExamen.Delete(id);
         }
 
         public List<Examen> GetAll()
@@ -28,7 +28,7 @@ namespace ClinicaPublic.Services.Service
 
         public Examen GetById(int id)
         {
-            throw new NotImplementedException();
+            return _repositoryExamen.GetById(id);
         }
 
         public Examen GetByName(string name)
@@ -38,12 +38,14 @@ namespace ClinicaPublic.Services.Service
 
         public bool Insert(Examen entity)
         {
-            throw new NotImplementedException();
+            entity.FechaRegistro = DateTime.Now;
+            return _repositoryExamen.Insert(entity);
         }
 
         public bool Update(Examen entity)
         {
-            throw new NotImplementedException();
+            entity.FechaRegistro = DateTime.Now;
+            return _repositoryExamen.Update(entity);
         }
     }
 }

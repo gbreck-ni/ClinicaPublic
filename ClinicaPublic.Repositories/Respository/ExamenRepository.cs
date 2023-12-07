@@ -1,13 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClinicaPublic.Repositories
+﻿namespace ClinicaPublic.Repositories
 {
     public class ExamenRepository : IExamenRepository
     {

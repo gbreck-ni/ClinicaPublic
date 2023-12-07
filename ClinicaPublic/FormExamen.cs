@@ -5,12 +5,13 @@ namespace ClinicaPublic
     public partial class FormExamen : Form
     {
         private readonly IExamenService _examenService;
+        private Examen _examen;
         public FormExamen(IExamenService examenService)
         {
             InitializeComponent();
             _examenService = examenService;
-
-            _examenService.GetAll();
+            _examen = new Examen();
         }
+
     }
 }
