@@ -21,7 +21,7 @@ namespace ClinicaPublic.Services.Service
             throw new NotImplementedException();
         }
 
-        public IQueryable<Examen> GetAll()
+        public List<Examen> GetAll()
         {
             return _repositoryExamen.GetAll();
         }

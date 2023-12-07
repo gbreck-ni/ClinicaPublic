@@ -12,6 +12,6 @@ namespace ClinicaPublic.Repositories
         bool Update(Examen entity);
         bool Delete(int id);
         Examen GetById(int id);
-        IQueryable<Examen> GetAll();
+        List<Examen> GetAll();
     }
 }

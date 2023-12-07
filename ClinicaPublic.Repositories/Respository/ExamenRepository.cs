@@ -20,32 +20,38 @@ namespace ClinicaPublic.Repositories
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            Examen model = _context.Examen.First(m => m.Id == id);
+            if (model == null) return false;
+
+            _context.Examen.Remove(model);
+            _context.SaveChanges();
+            return true;
         }
 
-        public IQueryable<Examen> GetAll()
+        public List<Examen> GetAll()
         {
-            //Lista = _context.Examen.ToList();
-            //return Lista;
-            Console.WriteLine("Exito");
             IQueryable<Examen> sqlExamen = _context.Examen;
-            return sqlExamen;
-            //return null;
+            return sqlExamen.ToList();
         }
 
         public Examen GetById(int id)
         {
-            throw new NotImplementedException();
+            Examen model = _context.Examen.First(m => m.Id == id);
+            return model;
         }
 
         public bool Insert(Examen entity)
         {
-            throw new NotImplementedException();
+            _context.Examen.Add(entity);
+            _context.SaveChanges();
+            return true;
         }
 
         public bool Update(Examen entity)
         {
-            throw new NotImplementedException();
+            _context.Update(entity);
+            _context.SaveChanges();
+            return true;
         }
     }
 }
