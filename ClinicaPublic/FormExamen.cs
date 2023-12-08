@@ -1,9 +1,6 @@
 using ClinicaPublic.App;
 using ClinicaPublic.Services.Service;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using System.ComponentModel;
-using System.Windows.Forms;
-using static System.Windows.Forms.LinkLabel;
 
 namespace ClinicaPublic
 {
