@@ -2,7 +2,8 @@
 
 Ejemplo de CRUD utilizando:
   * Repository Pattern
-  * Class Library
   * Dependency Injection
+  * Best practices
+  * Class Library
 
   * WinForms
